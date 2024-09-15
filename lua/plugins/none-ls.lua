@@ -5,6 +5,7 @@ return {
 		null_ls.setup({
       -- TODO: Find a way to automate this (take formatters from mason and loop)
 			sources = {
+        null_ls.builtins.formatting.black,
 				null_ls.builtins.formatting.stylua,
 			},
 		})
